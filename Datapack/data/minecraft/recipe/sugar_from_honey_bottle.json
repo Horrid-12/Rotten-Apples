@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "minecraft:honey_bottle"
+  ],
+  "result": {
+    "id": "minecraft:sugar",
+    "count": 3,
+    "components": {
+      "minecraft:food": {
+        "nutrition": 1,
+        "saturation": 0.4,
+        "can_always_eat": false
+      },
+      "minecraft:consumable": {
+        "consume_seconds": 0.4,
+        "animation": "eat",
+        "has_consume_particles": true,
+        "on_consume_effects": [
+          {
+            "type": "minecraft:apply_effects",
+            "effects": [
+              {
+                "id": "minecraft:speed",
+                "amplifier": 0,
+                "duration": 200
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,208 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "minecraft:chests/trial_chambers/reward_rare",
+          "weight": 8
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "minecraft:chests/trial_chambers/reward_common",
+          "weight": 2
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "minecraft:chests/trial_chambers/reward_common"
+        }
+      ],
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 3.0,
+        "min": 1.0
+      }
+    },
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "chance": 0.25,
+          "condition": "minecraft:random_chance"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "minecraft:chests/trial_chambers/reward_unique"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:apple",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1.0,
+                "max": 2.0
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{rotten_apple:1b}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Rotten Apple",
+                "color": "dark_green",
+                "italic": false
+              },
+              "target": "custom_name"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Eat near a mob to zombify it.",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "Heals Zombie Horses.",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "rotten_apple:rotten_apple",
+                "minecraft:food": {
+                  "nutrition": 2,
+                  "saturation": 0.1,
+                  "can_always_eat": true
+                },
+                "minecraft:consumable": {
+                  "consume_seconds": 1.6,
+                  "animation": "eat",
+                  "has_consume_particles": true,
+                  "on_consume_effects": [
+                    {
+                      "type": "minecraft:apply_effects",
+                      "effects": [
+                        {
+                          "id": "minecraft:hunger",
+                          "amplifier": 0,
+                          "duration": 600
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "minecraft:rarity": "uncommon"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:apple",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 2.0,
+                "max": 4.0
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{green_apple:1b}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Green Apple",
+                "color": "green",
+                "italic": false
+              },
+              "target": "custom_name"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "A crisp, fresh apple.",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "Grants Swiftness.",
+                  "color": "blue",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "rotten_apple:green_apple",
+                "minecraft:food": {
+                  "nutrition": 5,
+                  "saturation": 0.8,
+                  "can_always_eat": false
+                },
+                "minecraft:consumable": {
+                  "consume_seconds": 1.6,
+                  "animation": "eat",
+                  "has_consume_particles": true,
+                  "on_consume_effects": [
+                    {
+                      "type": "minecraft:apply_effects",
+                      "effects": [
+                        {
+                          "id": "minecraft:speed",
+                          "amplifier": 0,
+                          "duration": 600
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "minecraft:rarity": "common"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:empty",
+          "weight": 16
+        }
+      ]
+    }
+  ],
+  "random_sequence": "minecraft:chests/trial_chambers/reward"
+}

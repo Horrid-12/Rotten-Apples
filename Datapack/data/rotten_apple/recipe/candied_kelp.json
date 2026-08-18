@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "minecraft:dried_kelp",
+    "minecraft:sugar"
+  ],
+  "result": {
+    "id": "minecraft:dried_kelp",
+    "count": 1,
+    "components": {
+      "minecraft:custom_data": {"candied_kelp": true},
+      "minecraft:item_model": "rotten_apple:candied_kelp",
+      "minecraft:custom_name": {"text": "Candied Kelp", "color": "yellow", "italic": false},
+      "minecraft:food": {
+        "nutrition": 3,
+        "saturation": 3.6,
+        "can_always_eat": false
+      },
+      "minecraft:consumable": {
+        "consume_seconds": 0.8,
+        "animation": "eat",
+        "has_consume_particles": true
+      },
+      "minecraft:lore": [
+        {"text": "Sweet and crunchy.", "color": "gray", "italic": false}
+      ],
+      "minecraft:rarity": "common"
+    }
+  }
+}

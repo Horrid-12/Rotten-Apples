@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "eat": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": ["minecraft:golden_apple"]
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "rotten_apple:on_eat_golden"
+  }
+}

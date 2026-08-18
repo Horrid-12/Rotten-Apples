@@ -1,0 +1,6 @@
+{
+    "textures":  {
+                     "layer0":  "rotten_apple:item/candied_kelp"
+                 },
+    "parent":  "minecraft:item/generated"
+}

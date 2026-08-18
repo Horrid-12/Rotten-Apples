@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "has_melon": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:glistering_melon_slice"]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "rotten_apple:fix_melon"
+  }
+}

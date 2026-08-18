@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:apple",
+          "functions": [
+            {"function": "minecraft:set_custom_data", "tag": "{rotten_apple:1b}"},
+            {"function": "minecraft:set_name", "name": {"text": "Rotten Apple", "color": "dark_green", "italic": false}, "target": "custom_name"},
+            {"function": "minecraft:set_lore", "lore": [
+              {"text": "Eat near a mob to zombify it.", "color": "gray", "italic": false},
+              {"text": "Villager trades are preserved.", "color": "gray", "italic": false},
+              {"text": "Heals Zombie Horses.", "color": "gray", "italic": false},
+              {"text": "Eating it gives Hunger.", "color": "dark_red", "italic": false}
+            ], "mode": "replace_all"},
+            {"function": "minecraft:set_components", "components": {
+              "minecraft:item_model": "rotten_apple:rotten_apple",
+              "minecraft:food": {"nutrition": 2, "saturation": 0.1, "can_always_eat": true},
+              "minecraft:consumable": {"consume_seconds": 1.6, "animation": "eat", "has_consume_particles": true, "on_consume_effects": [{"type": "minecraft:apply_effects", "effects": [{"id": "minecraft:hunger", "amplifier": 0, "duration": 600}]}]},
+              "minecraft:rarity": "uncommon"
+            }}
+          ]
+        }
+      ]
+    }
+  ]
+}

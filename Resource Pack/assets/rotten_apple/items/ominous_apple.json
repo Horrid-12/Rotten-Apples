@@ -1,0 +1,6 @@
+{
+    "model":  {
+                  "model":  "rotten_apple:item/ominous_apple",
+                  "type":  "minecraft:model"
+              }
+}

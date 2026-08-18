@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "has_sugar": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:sugar"]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "rotten_apple:fix_sugar"
+  }
+}
