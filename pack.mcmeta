@@ -1,0 +1,10 @@
+{
+  "pack": {
+    "pack_format": 107,
+    "supported_formats": {
+      "min_inclusive": 80,
+      "max_inclusive": 107
+    },
+    "description": "Rotten Apple datapack"
+  }
+}

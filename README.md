@@ -1,5 +1,3 @@
-# Rotten-Apples
-A Minecraft Datapack which adds Rotten Apples
 # 🍎 Rotten Apple
 
 **Curse any mob with a single bite.**
@@ -104,8 +102,8 @@ New Wandering Traders automatically receive these custom trades:
 
 | | |
 |---|---|
-| **Minecraft Version** | 1.20.5 – 1.21.6+ |
-| **Pack Format** | 80 – 100 |
+| **Minecraft Version** | 1.20.5 – 26.2+ |
+| **Pack Format** | 80 – 107 |
 | **Platform** | Java Edition |
 | **Dependencies** | None (datapack only) |
 
