@@ -12,10 +12,10 @@ Requires the companion **Rotten Apple Resource Pack** for custom item models.
 
 -  **7 mob conversions** — Villagers, Horses, Hoglins, Piglins, Piglin Brutes, Cats, and Nautilus
 -  **Wither Apple** — A devastating variant that zombifies AND withers everything nearby
--  **5 custom foods** — Rotten Apple, Green Apple, Orange, Strawberry, Candied Kelp
+-  **4 custom foods** — Rotten Apple, Green Apple, Orange, Candied Kelp
 -  **Zombie Horse healing** — Feed a Rotten Apple to heal, or a Golden Apple to cure it back to a normal horse
 -  **Wandering Trader integration** — Custom fruit trades injected automatically
--  **Loot table expansion** — Rotten Apples, Oranges, and Strawberries appear in chest loot and nature
+-  **Loot table expansion** — Rotten Apples and Oranges appear in chest loot and nature
 -  **5 advancements** — Evil Twin, Horseback Medic, Rotten to the Core, and more
 
 ---
@@ -27,7 +27,6 @@ Requires the companion **Rotten Apple Resource Pack** for custom item models.
 | **Rotten Apple** | Wandering Trader (3 emeralds), chest loot | Eat near a mob to zombify it. Heals Zombie Horses. Grants Hunger on eat. |
 | **Green Apple** | Wandering Trader (1 emerald) | Grants Speed I for 10 seconds |
 | **Orange** | Wandering Trader (1 emerald), Acacia/Azalea leaf drops, chest loot | High saturation (14.4), nutrition 4 |
-| **Strawberry** | Sweet Berry Bush drops | Quick snack, nutrition 1, saturation 3.2 |
 | **Wither Apple** | End City chests (1% chance) | Same conversions as Rotten Apple + Wither II to all nearby entities for 10 seconds |
 | **Candied Kelp** | Craft Dried Kelp + Sugar | Nutrition 3, saturation 3.6, quick eat |
 
@@ -74,7 +73,6 @@ New Wandering Traders automatically receive these custom trades:
 
 **Natural Drops:**
 - **Oranges** — Drop from Acacia Leaves, Azalea Leaves, and Flowering Azalea Leaves
-- **Strawberries** — Drop from Sweet Berry Bushes
 
 **Rotten Flesh → Leather:**
 - Smelt, Smoke, or Campfire cook Rotten Flesh into Leather

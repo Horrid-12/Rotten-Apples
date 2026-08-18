@@ -1,6 +1,0 @@
-{
-    "textures":  {
-                     "layer0":  "rotten_apple:item/strawberry"
-                 },
-    "parent":  "minecraft:item/generated"
-}
