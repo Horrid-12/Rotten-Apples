@@ -25,6 +25,123 @@
           ]
         }
       ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:apple",
+          "functions": [
+            {"function": "minecraft:set_custom_data", "tag": "{green_apple:1b}"},
+            {"function": "minecraft:set_name", "name": {"text": "Green Apple", "color": "green", "italic": false}, "target": "custom_name"},
+            {"function": "minecraft:set_lore", "lore": [
+              {"text": "A crisp, fresh apple.", "color": "gray", "italic": false},
+              {"text": "Grants Swiftness.", "color": "blue", "italic": false}
+            ], "mode": "replace_all"},
+            {"function": "minecraft:set_components", "components": {
+              "minecraft:item_model": "rotten_apple:green_apple",
+              "minecraft:food": {"nutrition": 5, "saturation": 0.8, "can_always_eat": false},
+              "minecraft:consumable": {"consume_seconds": 1.6, "animation": "eat", "has_consume_particles": true, "on_consume_effects": [{"type": "minecraft:apply_effects", "effects": [{"id": "minecraft:speed", "amplifier": 0, "duration": 600}]}]},
+              "minecraft:rarity": "common"
+            }}
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:apple",
+          "functions": [
+            {"function": "minecraft:set_custom_data", "tag": "{orange:1b}"},
+            {"function": "minecraft:set_name", "name": {"text": "Orange", "color": "gold", "italic": false}, "target": "custom_name"},
+            {"function": "minecraft:set_lore", "lore": [
+              {"text": "Juicy and refreshing.", "color": "gray", "italic": false},
+              {"text": "High saturation.", "color": "yellow", "italic": false}
+            ], "mode": "replace_all"},
+            {"function": "minecraft:set_components", "components": {
+              "minecraft:item_model": "rotten_apple:orange",
+              "minecraft:food": {"nutrition": 4, "saturation": 14.4, "can_always_eat": false},
+              "minecraft:consumable": {"consume_seconds": 1.6, "animation": "eat", "has_consume_particles": true},
+              "minecraft:rarity": "common"
+            }}
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_apple",
+          "functions": [
+            {"function": "minecraft:set_custom_data", "tag": "{wither_apple:1b}"},
+            {"function": "minecraft:set_name", "name": {"text": "Wither Apple", "color": "dark_gray", "italic": false}, "target": "custom_name"},
+            {"function": "minecraft:set_lore", "lore": [
+              {"text": "Corrupts everything it touches.", "color": "dark_purple", "italic": false},
+              {"text": "Withers all nearby mobs and players.", "color": "gray", "italic": false},
+              {"text": "You are immune to its effect.", "color": "green", "italic": false}
+            ], "mode": "replace_all"},
+            {"function": "minecraft:set_components", "components": {
+              "minecraft:item_model": "rotten_apple:wither_apple",
+              "minecraft:food": {"nutrition": 4, "saturation": 1.2, "can_always_eat": true},
+              "minecraft:consumable": {"consume_seconds": 1.6, "animation": "eat", "has_consume_particles": true},
+              "minecraft:rarity": "epic"
+            }}
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:apple",
+          "functions": [
+            {"function": "minecraft:set_custom_data", "tag": "{ominous_apple:1b}"},
+            {"function": "minecraft:set_name", "name": {"text": "Ominous Apple", "color": "dark_purple", "italic": false}, "target": "custom_name"},
+            {"function": "minecraft:set_lore", "lore": [
+              {"text": "Radiates an unsettling aura.", "color": "gray", "italic": false},
+              {"text": "Grants Trial Omen in chambers.", "color": "dark_aqua", "italic": false},
+              {"text": "Triggers raids near villages.", "color": "dark_red", "italic": false},
+              {"text": "Also grants Strength and Resistance.", "color": "yellow", "italic": false}
+            ], "mode": "replace_all"},
+            {"function": "minecraft:set_components", "components": {
+              "minecraft:item_model": "rotten_apple:ominous_apple",
+              "minecraft:food": {"nutrition": 6, "saturation": 9.6, "can_always_eat": true},
+              "minecraft:consumable": {"consume_seconds": 1.6, "animation": "eat", "has_consume_particles": true, "on_consume_effects": [{"type": "minecraft:apply_effects", "effects": [{"id": "minecraft:strength", "amplifier": 0, "duration": 600}, {"id": "minecraft:resistance", "amplifier": 0, "duration": 600}, {"id": "minecraft:bad_omen", "amplifier": 0, "duration": 2000}]}]},
+              "minecraft:rarity": "epic"
+            }}
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:dried_kelp",
+          "functions": [
+            {"function": "minecraft:set_custom_data", "tag": "{candied_kelp:1b}"},
+            {"function": "minecraft:set_name", "name": {"text": "Candied Kelp", "color": "yellow", "italic": false}, "target": "custom_name"},
+            {"function": "minecraft:set_lore", "lore": [
+              {"text": "Sweet and crunchy.", "color": "gray", "italic": false}
+            ], "mode": "replace_all"},
+            {"function": "minecraft:set_components", "components": {
+              "minecraft:item_model": "rotten_apple:candied_kelp",
+              "minecraft:food": {"nutrition": 3, "saturation": 3.6, "can_always_eat": false},
+              "minecraft:consumable": {"consume_seconds": 0.8, "animation": "eat", "has_consume_particles": true},
+              "minecraft:rarity": "common"
+            }}
+          ]
+        }
+      ]
     }
   ]
 }

@@ -10,13 +10,15 @@ Requires the companion **Rotten Apple Resource Pack** for custom item models.
 
 ## ✨ Features
 
--  **7 mob conversions** — Villagers, Horses, Hoglins, Piglins, Piglin Brutes, Cats, and Nautilus
--  **Wither Apple** — A devastating variant that zombifies AND withers everything nearby
--  **4 custom foods** — Rotten Apple, Green Apple, Orange, Candied Kelp
--  **Zombie Horse healing** — Feed a Rotten Apple to heal, or a Golden Apple to cure it back to a normal horse
--  **Wandering Trader integration** — Custom fruit trades injected automatically
--  **Loot table expansion** — Rotten Apples and Oranges appear in chest loot and nature
--  **5 advancements** — Evil Twin, Horseback Medic, Rotten to the Core, and more
+- **7 mob conversions** — Villagers, Horses, Hoglins, Piglins, Piglin Brutes, Cats, and Nautilus
+- **6 custom foods** — Rotten Apple, Green Apple, Orange, Wither Apple, Ominous Apple, Candied Kelp
+- **Wither Apple** — A devastating variant that zombifies AND withers everything nearby
+- **Ominous Apple** — Grants Strength, Resistance, and Bad Omen to trigger raids
+- **Zombie Horse healing** — Feed a Rotten Apple to heal, or a Golden Apple to cure it back to a normal horse
+- **Wandering Trader integration** — Custom fruit trades injected automatically
+- **Loot table expansion** — Custom items appear in chest loot and nature
+- **Vanilla item overhaul** — Sugar and Glistering Melon Slice are now edible with bonus effects
+- **3 advancements** — Evil Twin, Horseback Medic, Rotten to the Core
 
 ---
 
@@ -25,10 +27,20 @@ Requires the companion **Rotten Apple Resource Pack** for custom item models.
 | Item | How to Get | Effect |
 |------|-----------|--------|
 | **Rotten Apple** | Wandering Trader (3 emeralds), chest loot | Eat near a mob to zombify it. Heals Zombie Horses. Grants Hunger on eat. |
-| **Green Apple** | Wandering Trader (1 emerald) | Grants Speed I for 10 seconds |
-| **Orange** | Wandering Trader (1 emerald), Acacia/Azalea leaf drops, chest loot | High saturation (14.4), nutrition 4 |
-| **Wither Apple** | End City chests (1% chance) | Same conversions as Rotten Apple + Wither II to all nearby entities for 10 seconds |
+| **Green Apple** | Wandering Trader (1 emerald), Azalea/Flowering Azalea leaf drops, Shipwreck, Trial Chambers | Grants Speed I for 10 seconds |
+| **Orange** | Wandering Trader (1 emerald), Acacia leaf drops, chest loot | High saturation (14.4), nutrition 4 |
+| **Wither Apple** | End City chests (1% chance), Ominous Trial Chamber rewards (5% chance) | Same conversions as Rotten Apple + Wither II to all nearby entities for 10 seconds |
+| **Ominous Apple** | Pillager Outpost, Woodland Mansion | Grants Strength I + Resistance I (30s) + Bad Omen (100s). Epic rarity. |
 | **Candied Kelp** | Craft Dried Kelp + Sugar | Nutrition 3, saturation 3.6, quick eat |
+
+### Vanilla Item Overhaul
+
+| Item | Change |
+|------|--------|
+| **Sugar** | Now edible. Grants Speed I for 10 seconds. Recipes auto-produce edible versions. |
+| **Glistering Melon Slice** | Now edible. Grants Regeneration I for 5 seconds. Recipe auto-produces edible version. |
+
+> Non-edible versions are automatically replaced when they enter your inventory.
 
 ---
 
@@ -46,7 +58,7 @@ Requires the companion **Rotten Apple Resource Pack** for custom item models.
 | Zombie Horse | *Healed* | Instant Damage (heals undead), Speed I + Resistance I for 60s, baby age accelerated |
 | Zombie Horse (Golden Apple) | Horse | **Cured back to normal** with random color/markings, stats preserved |
 
-> **Wither Apple** performs the same conversions but also applies **Wither II** to all entities within 8 blocks (excluding the eater).
+> **Wither Apple** and **Ominous Apple** perform the same conversions but Wither Apple also applies **Wither II** to all entities within 8 blocks (excluding the eater).
 
 ---
 
@@ -65,17 +77,34 @@ New Wandering Traders automatically receive these custom trades:
 
 ## 🗺️ Loot Distribution
 
-**Chest Loot** (Rotten Apples & Oranges):
-- Abandoned Mineshaft, Desert Pyramid, Shipwreck Supply, Simple Dungeon, Jungle Temple, Pillager Outpost, Woodland Mansion, Underwater Ruins, Trial Chambers, Village houses (Plains, Desert, Taiga, Snowy)
+**Rotten Apples & Oranges:**
+- Abandoned Mineshaft, Desert Pyramid, Simple Dungeon, Jungle Temple, Underwater Ruins, Village houses (Plains, Desert, Taiga, Snowy)
 
-**Wither Apple** (End City only):
-- 1% chance per chest
+**Ominous Apple:**
+- Pillager Outpost, Woodland Mansion
+
+**Green Apples:**
+- Shipwreck Supply chests, Trial Chamber rewards (normal + ominous)
+
+**Wither Apple:**
+- End City chests (1% chance), Ominous Trial Chamber rewards (5% chance)
 
 **Natural Drops:**
-- **Oranges** — Drop from Acacia Leaves, Azalea Leaves, and Flowering Azalea Leaves
+- **Oranges** — Drop from Acacia Leaves
+- **Green Apples** — Drop from Azalea Leaves and Flowering Azalea Leaves
 
 **Rotten Flesh → Leather:**
 - Smelt, Smoke, or Campfire cook Rotten Flesh into Leather
+
+---
+
+## 🎮 Testing
+
+Use the built-in test loot table to get one of every custom item:
+
+```
+/loot give @s loot rotten_apple:test
+```
 
 ---
 
@@ -84,7 +113,7 @@ New Wandering Traders automatically receive these custom trades:
 ### Datapack
 
 1. Download or clone this repository
-2. Place the `RottenApple` folder into your world's `datapacks/` directory
+2. Place the `Datapack` folder into your world's `datapacks/` directory
 3. Run `/reload` or restart the server
 4. You'll see a green confirmation message in chat
 
@@ -113,7 +142,8 @@ New Wandering Traders automatically receive these custom trades:
 |-------------|-------------|--------|
 | **Evil Twin** | Convert a Villager into a Zombie Villager | 100 XP |
 | **Horseback Medic** | Heal a Zombie Horse with a Rotten Apple | 50 XP |
-| **Rotten to the Core** | Convert one of every mob type | 200 XP |
+| **Rotten to the Core** | Convert one of every mob type (Villager, Horse, Hoglin, Piglin, Cat) | 200 XP |
 
 ---
 
+*Made with corruption and good intentions.*
